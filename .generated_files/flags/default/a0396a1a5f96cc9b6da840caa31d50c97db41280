@@ -1,0 +1,1 @@
+ $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "tinyusb/src" -I "tinyusb/hw" -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD) C:\Users\stomp\MPLABXProjects\sam)test.X\tinyusb\src\portable\microchip\samd\dcd_samd.c

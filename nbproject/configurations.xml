@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="65">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>tinyusb/src/tusb_config.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+      <itemPath>samd11c14a_flash.ld</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <logicalFolder name="class" displayName="class" projectFiles="true">
+          <logicalFolder name="audio" displayName="audio" projectFiles="true">
+            <itemPath>tinyusb/src/class/audio/audio_device.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="bth" displayName="bth" projectFiles="true">
+            <itemPath>tinyusb/src/class/bth/bth_device.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="cdc" displayName="cdc" projectFiles="true">
+            <itemPath>tinyusb/src/class/cdc/cdc_device.c</itemPath>
+            <itemPath>tinyusb/src/class/cdc/cdc_host.c</itemPath>
+            <itemPath>tinyusb/src/class/cdc/cdc_rndis_host.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="dfu" displayName="dfu" projectFiles="true">
+            <itemPath>tinyusb/src/class/dfu/dfu_device.c</itemPath>
+            <itemPath>tinyusb/src/class/dfu/dfu_rt_device.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="hid" displayName="hid" projectFiles="true">
+            <itemPath>tinyusb/src/class/hid/hid_device.c</itemPath>
+            <itemPath>tinyusb/src/class/hid/hid_host.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="midi" displayName="midi" projectFiles="true">
+            <itemPath>tinyusb/src/class/midi/midi_device.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="msc" displayName="msc" projectFiles="true">
+            <itemPath>tinyusb/src/class/msc/msc_device.c</itemPath>
+            <itemPath>tinyusb/src/class/msc/msc_host.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="net" displayName="net" projectFiles="true">
+            <itemPath>tinyusb/src/class/net/ecm_rndis_device.c</itemPath>
+            <itemPath>tinyusb/src/class/net/ncm_device.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="usbtmc" displayName="usbtmc" projectFiles="true">
+            <itemPath>tinyusb/src/class/usbtmc/usbtmc_device.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="vendor" displayName="vendor" projectFiles="true">
+            <itemPath>tinyusb/src/class/vendor/vendor_device.c</itemPath>
+            <itemPath>tinyusb/src/class/vendor/vendor_host.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="video" displayName="video" projectFiles="true">
+            <itemPath>tinyusb/src/class/video/video_device.c</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="common" displayName="common" projectFiles="true">
+          <itemPath>tinyusb/src/common/tusb_fifo.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="device" displayName="device" projectFiles="true">
+          <itemPath>tinyusb/src/device/usbd.c</itemPath>
+          <itemPath>tinyusb/src/device/usbd_control.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="host" displayName="host" projectFiles="true">
+          <itemPath>tinyusb/src/host/hub.c</itemPath>
+          <itemPath>tinyusb/src/host/usbh.c</itemPath>
+          <itemPath>tinyusb/src/host/usbh_control.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="osal" displayName="osal" projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="portable" displayName="portable" projectFiles="true">
+          <logicalFolder name="broadcom" displayName="broadcom" projectFiles="true">
+            <logicalFolder name="synopsys" displayName="synopsys" projectFiles="true">
+              <itemPath>tinyusb/src/portable/broadcom/synopsys/dcd_synopsys.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="chipidea" displayName="chipidea" projectFiles="true">
+            <logicalFolder name="ci_hs" displayName="ci_hs" projectFiles="true">
+              <itemPath>tinyusb/src/portable/chipidea/ci_hs/dcd_ci_hs.c</itemPath>
+              <itemPath>tinyusb/src/portable/chipidea/ci_hs/hcd_ci_hs.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="dialog" displayName="dialog" projectFiles="true">
+            <logicalFolder name="da146xx" displayName="da146xx" projectFiles="true">
+              <itemPath>tinyusb/src/portable/dialog/da146xx/dcd_da146xx.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="ehci" displayName="ehci" projectFiles="true">
+            <itemPath>tinyusb/src/portable/ehci/ehci.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="espressif" displayName="espressif" projectFiles="true">
+            <logicalFolder name="esp32sx" displayName="esp32sx" projectFiles="true">
+              <itemPath>tinyusb/src/portable/espressif/esp32sx/dcd_esp32sx.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="mentor" displayName="mentor" projectFiles="true">
+            <logicalFolder name="musb" displayName="musb" projectFiles="true">
+              <itemPath>tinyusb/src/portable/mentor/musb/dcd_musb.c</itemPath>
+              <itemPath>tinyusb/src/portable/mentor/musb/hcd_musb.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="microchip" displayName="microchip" projectFiles="true">
+            <logicalFolder name="samd" displayName="samd" projectFiles="true">
+              <itemPath>tinyusb/src/portable/microchip/samd/dcd_samd.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="samg" displayName="samg" projectFiles="true">
+              <itemPath>tinyusb/src/portable/microchip/samg/dcd_samg.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="samx7x" displayName="samx7x" projectFiles="true">
+              <itemPath>tinyusb/src/portable/microchip/samx7x/dcd_samx7x.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="mindmotion" displayName="mindmotion" projectFiles="true">
+            <logicalFolder name="mm32" displayName="mm32" projectFiles="true">
+              <itemPath>tinyusb/src/portable/mindmotion/mm32/dcd_mm32f327x_otg.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="nordic" displayName="nordic" projectFiles="true">
+            <logicalFolder name="nrf5x" displayName="nrf5x" projectFiles="true">
+              <itemPath>tinyusb/src/portable/nordic/nrf5x/dcd_nrf5x.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="nuvoton" displayName="nuvoton" projectFiles="true">
+            <logicalFolder name="nuc120" displayName="nuc120" projectFiles="true">
+              <itemPath>tinyusb/src/portable/nuvoton/nuc120/dcd_nuc120.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="nuc121" displayName="nuc121" projectFiles="true">
+              <itemPath>tinyusb/src/portable/nuvoton/nuc121/dcd_nuc121.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="nuc505" displayName="nuc505" projectFiles="true">
+              <itemPath>tinyusb/src/portable/nuvoton/nuc505/dcd_nuc505.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="nxp" displayName="nxp" projectFiles="true">
+            <logicalFolder name="khci" displayName="khci" projectFiles="true">
+              <itemPath>tinyusb/src/portable/nxp/khci/dcd_khci.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lpc17_40" displayName="lpc17_40" projectFiles="true">
+              <itemPath>tinyusb/src/portable/nxp/lpc17_40/dcd_lpc17_40.c</itemPath>
+              <itemPath>tinyusb/src/portable/nxp/lpc17_40/hcd_lpc17_40.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lpc_ip3511" displayName="lpc_ip3511" projectFiles="true">
+              <itemPath>tinyusb/src/portable/nxp/lpc_ip3511/dcd_lpc_ip3511.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="transdimension"
+                           displayName="transdimension"
+                           projectFiles="true">
+              <itemPath>tinyusb/src/portable/nxp/transdimension/dcd_transdimension.c</itemPath>
+              <itemPath>tinyusb/src/portable/nxp/transdimension/hcd_transdimension.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="ohci" displayName="ohci" projectFiles="true">
+            <itemPath>tinyusb/src/portable/ohci/ohci.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="raspberrypi" displayName="raspberrypi" projectFiles="true">
+            <logicalFolder name="rp2040" displayName="rp2040" projectFiles="true">
+              <itemPath>tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c</itemPath>
+              <itemPath>tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c</itemPath>
+              <itemPath>tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="renesas" displayName="renesas" projectFiles="true">
+            <logicalFolder name="usba" displayName="usba" projectFiles="true">
+              <itemPath>tinyusb/src/portable/renesas/usba/dcd_usba.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="sony" displayName="sony" projectFiles="true">
+            <logicalFolder name="cxd56" displayName="cxd56" projectFiles="true">
+              <itemPath>tinyusb/src/portable/sony/cxd56/dcd_cxd56.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="st" displayName="st" projectFiles="true">
+            <logicalFolder name="stm32_fsdev" displayName="stm32_fsdev" projectFiles="true">
+              <itemPath>tinyusb/src/portable/st/stm32_fsdev/dcd_stm32_fsdev.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="synopsys" displayName="synopsys" projectFiles="true">
+              <itemPath>tinyusb/src/portable/st/synopsys/dcd_synopsys.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="synopsys" displayName="synopsys" projectFiles="true">
+            <logicalFolder name="dwc2" displayName="dwc2" projectFiles="true">
+              <itemPath>tinyusb/src/portable/synopsys/dwc2/dcd_dwc2.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="template" displayName="template" projectFiles="true">
+            <itemPath>tinyusb/src/portable/template/dcd_template.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="ti" displayName="ti" projectFiles="true">
+            <logicalFolder name="msp430x5xx" displayName="msp430x5xx" projectFiles="true">
+              <itemPath>tinyusb/src/portable/ti/msp430x5xx/dcd_msp430x5xx.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="valentyusb" displayName="valentyusb" projectFiles="true">
+            <logicalFolder name="eptri" displayName="eptri" projectFiles="true">
+              <itemPath>tinyusb/src/portable/valentyusb/eptri/dcd_eptri.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+        </logicalFolder>
+        <itemPath>tinyusb/src/tusb.c</itemPath>
+      </logicalFolder>
+      <itemPath>startup_samd11c14a.c</itemPath>
+      <itemPath>system_samd11c14a.c</itemPath>
+      <itemPath>main.c</itemPath>
+      <itemPath>tinyusb/src/msc_disk.c</itemPath>
+      <itemPath>tinyusb/src/usb_descriptors.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>tinyusb/src</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="default" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>ATSAMD11C14A</targetDevice>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>noID</platformTool>
+        <languageToolchain>ARM</languageToolchain>
+        <languageToolchainVersion>6.3.1</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <packs>
+        <pack name="SAMD11_DFP" vendor="Microchip" version="2.5.61"/>
+        <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
+      </packs>
+      <ScriptingSettings>
+      </ScriptingSettings>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <archiverTool>
+        </archiverTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+        <subordinates>
+        </subordinates>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeUseCleanTarget>false</makeUseCleanTarget>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <ARM-AR>
+        <property key="archiver-flags" value="-r"/>
+      </ARM-AR>
+      <ARM-AS>
+        <property key="announce-version" value="false"/>
+        <property key="include-paths" value=""/>
+        <property key="suppress-warnings" value="false"/>
+      </ARM-AS>
+      <ARM-AS-PRE>
+        <property key="announce-version" value="false"/>
+        <property key="include-paths" value=""/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="preprocessor-macros-undefined" value=""/>
+        <property key="suppress-warnings" value="false"/>
+      </ARM-AS-PRE>
+      <ARM-CPP>
+        <property key="additional-warnings" value="true"/>
+        <property key="called-functions-located" value="true"/>
+        <property key="default-bitfield-type" value="false"/>
+        <property key="default-char-type" value="false"/>
+        <property key="disable-extra-code-exception" value="true"/>
+        <property key="disable-extra-code-generation" value="true"/>
+        <property key="extra-include-directories" value=""/>
+        <property key="extra-warnings" value="false"/>
+        <property key="fast-math" value="false"/>
+        <property key="garbage-collect-data" value="false"/>
+        <property key="garbage-collect-functions" value="true"/>
+        <property key="inhibit-all" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="no-system-directories" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="position-independent" value="false"/>
+        <property key="preprocess-only" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="preprocessor-macros-undefined" value=""/>
+        <property key="strict-ansi" value="false"/>
+        <property key="strict-ansi-errors" value="false"/>
+        <property key="syntax-only" value="false"/>
+        <property key="undefined-identifier" value="false"/>
+        <property key="unsafe-math" value="false"/>
+        <property key="use-rodata" value="false"/>
+        <property key="verbose" value="false"/>
+      </ARM-CPP>
+      <ARM-GCC>
+        <property key="additional-warnings" value="true"/>
+        <property key="called-functions-located" value="true"/>
+        <property key="default-bitfield-type" value="false"/>
+        <property key="default-char-type" value="false"/>
+        <property key="extra-include-directories" value="tinyusb\src;tinyusb\hw"/>
+        <property key="extra-warnings" value="false"/>
+        <property key="fast-math" value="false"/>
+        <property key="garbage-collect-data" value="false"/>
+        <property key="garbage-collect-functions" value="true"/>
+        <property key="inhibit-all" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="no-system-directories" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="position-independent" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="preprocessor-macros-undefined" value=""/>
+        <property key="strict-ansi" value="false"/>
+        <property key="strict-ansi-errors" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="syntax-only" value="false"/>
+        <property key="undefined-identifier" value="false"/>
+        <property key="unsafe-math" value="false"/>
+        <property key="verbose" value="false"/>
+      </ARM-GCC>
+      <ARM-Global>
+        <property key="bin" value="false"/>
+        <property key="common-include-directories" value=""/>
+        <property key="eep" value="false"/>
+        <property key="hex" value="true"/>
+        <property key="lss" value="false"/>
+        <property key="omit-pack-options" value="false"/>
+        <property key="processor-mode" value="-mthumb"/>
+        <property key="srec" value="false"/>
+        <property key="user-pack-include" value=""/>
+      </ARM-Global>
+      <ARM-LD>
+        <property key="additional-specs" value="--specs=nosys.specs"/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="fast-math" value="false"/>
+        <property key="flash-segment" value=""/>
+        <property key="generate-map-file" value="true"/>
+        <property key="input-libraries" value=""/>
+        <property key="no-default-libs" value="false"/>
+        <property key="no-shared-libraries" value="false"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="omit-symbol-information" value="false"/>
+        <property key="other-options" value=""/>
+        <property key="position-independent" value="false"/>
+        <property key="remove-unused-sections" value="true"/>
+        <property key="size-optimized-library" value="false"/>
+        <property key="sram-segment" value=""/>
+        <property key="unsafe-math" value="false"/>
+      </ARM-LD>
+    </conf>
+  </confs>
+</configurationDescriptor>
